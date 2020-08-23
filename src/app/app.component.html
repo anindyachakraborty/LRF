@@ -1,0 +1,138 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="push" #drawer>
+    <mat-list role="list">
+      <mat-list-item role="listitem" class="listClick" [routerLink]="['/']" routerLinkActive="router-link-active"
+        (click)="drawer.toggle()">
+        <span class="fas fa-home fa-2x settingList"></span>
+        <span class="settingsTitle">Home</span>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem" class="listClick" [routerLink]="'/treatment'" routerLinkActive="router-link-active"
+        (click)="drawer.toggle()">
+        <span class="fas fa-heartbeat fa-2x settingList"></span>
+        <span class="settingsTitle">Our Treatment</span>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem" class="listClick" [routerLink]="['/gallery']" routerLinkActive="router-link-active"
+        (click)="drawer.toggle()">
+        <span class="far fa-images fa-2x settingList"></span>
+        <span class="settingsTitle">Gallery</span>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem" class="listClick" [routerLink]="['/about']" routerLinkActive="router-link-active"
+        (click)="drawer.toggle()">
+        <span class="far fa-address-card fa-2x settingList"></span>
+        <span class="settingsTitle">About Us</span>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem" class="listClick" [routerLink]="['/contact']" routerLinkActive="router-link-active"
+        (click)="drawer.toggle()">
+        <span class="fas fa-phone fa-2x settingList"></span>
+        <span class="settingsTitle">Contact Us</span>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar color="primary">
+      <button class="btn btn-info" (click)="drawer.toggle()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <span class="headingTitle" [routerLink]="['/']" routerLinkActive="router-link-active">Life Revision
+        Foundation</span>
+    </mat-toolbar>
+
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 footerClass">
+
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+
+            <!-- Content -->
+            <h3 class="text-uppercase">About Us</h3>
+            <p>De-addiction cum Rehabilitation Center for Drugs & Alchohol dependency & Mild Psychological problems</p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3">
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h3 class="text-uppercase">Get in Touch</h3>
+
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-map-marker-alt iconFooterClass"></i>
+                <p class="paragraphFooterClass">Kamalgazi, karbala, narendrapur, 24pgs(s) Kolkata-700103.</p>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt iconFooterClass"></i>
+                <p class="paragraphFooterClass">+(91) 8420747599</p>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt iconFooterClass"></i>
+                <p class="paragraphFooterClass">+(91) 8420747599</p>
+              </li>
+              <li>
+                <i class="far fa-envelope iconFooterClass"></i>
+                <p class="paragraphFooterClass">lifesaviourfoundation@gmail.com</p>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h3 class="text-uppercase">Links</h3>
+
+            <ul class="list-unstyled">
+              <li>
+                <a [routerLink]="['/']" routerLinkActive="router-link-active" class="linkColor">Home</a>
+              </li>
+              <li>
+                <a [routerLink]="['/treatment']" routerLinkActive="router-link-active" class="linkColor">Our
+                  Treatment</a>
+              </li>
+              <li>
+                <a [routerLink]="['/gallery']" routerLinkActive="router-link-active" class="linkColor">Gallery</a>
+              </li>
+              <li>
+                <a [routerLink]="['/contact']" routerLinkActive="router-link-active" class="linkColor">Contact Us</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a [routerLink]="['/admin']" routerLinkActive="router-link-active" class="linkColor"> Life Revision
+          Foundation</a>
+        <span> | All rights reserved</span>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+  </mat-drawer-content>
+</mat-drawer-container>

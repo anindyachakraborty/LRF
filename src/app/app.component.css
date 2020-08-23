@@ -1,0 +1,30 @@
+.footerClass{
+  background-color: purple;
+  color: white;
+}
+.linkColor{
+  color: chartreuse;
+}
+.headingTitle{
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.listClick{
+  cursor: pointer;
+}
+.iconFooterClass{
+  float: left;
+  margin-left: auto;
+}
+.paragraphFooterClass{
+  margin-left: 0.5em;
+}
+.settingList{
+  /* margin-right: auto; */
+  padding: auto;
+}
+.settingsTitle{
+  margin-right: 2.5em;
+  margin-left: 1.5em;
+}
