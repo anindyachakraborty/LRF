@@ -1,0 +1,14 @@
+
+.phoneCardAltIcon{
+    border: 2px;
+    background-color: green;
+    color: red;
+    border-radius: 50%;
+}
+.treatmentCard{
+    background-color: blue;
+    color: white;
+}
+.secondCardHeader{
+    background-color: lightskyblue;
+}
