@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { GoogleMapsModule } from '@angular/google-maps'
+
 import { HomeComponent } from './home/home.component';
 import { TreatmentComponent } from './treatment/treatment.component';
 import { AboutComponent } from './about/about.component';
@@ -30,7 +32,8 @@ import { AdminComponent } from './admin/admin.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
