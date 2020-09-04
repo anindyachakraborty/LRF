@@ -15,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AdminComponent } from './admin/admin.component';
     AboutComponent,
     GalleryComponent,
     ContactComponent,
-    AdminComponent
+    AdminComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

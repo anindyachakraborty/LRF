@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PreloadAllModules } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -8,6 +7,7 @@ import { TreatmentComponent } from './treatment/treatment.component';
 import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 
