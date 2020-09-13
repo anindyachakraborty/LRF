@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatDialogModule } from '@angular/material/dialog';
 import { GoogleMapsModule } from '@angular/google-maps'
 
 import { HomeComponent } from './home/home.component';
@@ -16,6 +17,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
+import { HomeDialogComponent } from './home.dialog/home.dialog.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { LoginComponent } from './login/login.component';
     GalleryComponent,
     ContactComponent,
     AdminComponent,
-    LoginComponent
+    LoginComponent,
+    HomeDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { LoginComponent } from './login/login.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
+    MatDialogModule,
     GoogleMapsModule
   ],
   providers: [],
